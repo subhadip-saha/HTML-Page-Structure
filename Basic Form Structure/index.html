@@ -1,0 +1,128 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>BasicForm</title>
+  </head>
+  <body>
+    <h1>Basic Form Structure</h1>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="username" required>
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" min="1" max="200" step="5">
+      </div>
+      <div>
+        <label for="date">Date of Birth: </label>
+        <input type="date" name="date" id="date" min="2022-04-24">
+      </div>
+      <div>
+        Identity Proof:
+        <div>
+          <label for="passport">Passport</label>
+          <input type="checkbox" name="passport" id="passport" checked>
+        </div>
+        <div>
+          <label for="aadhaar">Aadhaar Card</label>
+          <input type="checkbox" name="aadhaar" id="aadhaar">
+        </div>
+        <div>
+          <label for="voter">Voter ID</label>
+          <input type="checkbox" name="voter" id="voter">
+        </div>
+        <div>
+          <label for="license">Driving License</label>
+          <input type="checkbox" name="license" id="license">
+        </div>
+      </div>
+      <div>
+        Gender:
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" checked>
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+          <label for="others">Others</label>
+          <input type="radio" name="gender" id="others" value="others">
+        </div>
+      </div>
+      <div>
+        <label for="country">Country: </label>
+        <select name="country" id="country" multiple>
+          <option value="India" selected>India</option>
+          <option label="USA" value="Red"></option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+          <option label="Canada" value="Canada"></option>
+          <option value="England">England</option>
+          <option value="Australia">Australia</option>
+        </select>
+        <label for="eyeColor">Eye-colour: </label>
+
+        <select id="eyeColor">
+          <option value="black">Black</option>
+          <option value="brown">Brown</option>
+          <option value="blue">Blue</option>
+          <option value="green" selected>Green</option>
+        </select>
+      </div>
+      <div>
+        <label for="bio">Bio: </label>
+        <textarea id="bio" name="bio">Say something</textarea>
+      </div>
+      <input type="hidden" name="hidden" value="hello-hi">
+      <div>
+        <label for="file">Upload File: </label>
+        <input id="file" type="file" name="file">
+      </div>
+      <div>
+        <label for="phone">Phone No.: </label>
+        <input type="tel" name="phone" id="phone">
+      </div>
+      <div>
+        <label for="url">URL: </label>
+        <input type="url" name="url" id="url">
+      </div>
+      <div>
+        <label for="color">Color: </label>
+        <input type="color" name="color" id="color">
+      </div>
+      <div>
+        <label>
+          Password: 
+          <input type="password" name="password" required>
+        </label>
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p>This is a basic <span style="color:blue;font-weight:bold">HTML</span> Form and you can add <span style="color:red;font-weight:bold">CSS</span> also.</p>
+
+    <!-- Side Links Only -->
+    <div class="side-links">
+      <a href="https://youtube.com" target="_blank" class="side-link side-link-youtube">
+        <i class="fab fa-youtube-square side-link-icon"></i>
+        <span class="side-link-text">View Tutorial</span>
+      </a>
+      <a href="https://github.com/" target="_blank" class="side-link side-link-github side-link-icon">
+        <i class="fab fa-github-square"></i>
+        <span class="side-link-text">View GitHub</span>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="side-link side-link-twitter">
+        <i class="fab fa-twitter-square side-link-icon"></i>
+        <span class="side-link-text">View Twitter</span>
+      </a>
+    </div>
+  </body>
+  </html>
